@@ -1,0 +1,15 @@
+[MESSAGES CONTROL]
+# fixtures are injected by name (redefined-outer-name), no docstrings in this project
+# logging-fstring-interpolation off on purpose, log messages read better with the values inline
+# import-outside-toplevel off on purpose: the two pages reference each
+# other and conftest builds page objects without a circular import
+disable=missing-module-docstring,missing-function-docstring,missing-class-docstring,redefined-outer-name,too-few-public-methods,logging-fstring-interpolation,import-outside-toplevel
+
+[DESIGN]
+# a parametrized test receives the table columns next to the fixtures
+max-args=6
+# testdata holds one attribute per constant the tests use
+max-attributes=20
+
+[FORMAT]
+max-line-length=88
